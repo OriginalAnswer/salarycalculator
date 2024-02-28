@@ -134,7 +134,7 @@ main{
 
 
 .app{
-    width: clamp(500px, 100%, 700px);
+    width: clamp(0%, 100%, 700px);
     flex: 1;
 }
 /* 앱인풋 디자인----------------- */
