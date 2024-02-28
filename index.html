@@ -20,12 +20,332 @@
         </label>
     </header>
     <main>
-        <div class="notice-minpay">
-            <h2>2024년 최저시급은 9,860원 입니다.</h2>
-        </div>
+        <section class="pay_banner">
+            <h2>대한민국의 2024년 최저시급은 9,860원 입니다.</h2>
+        </section>
         <div class="app">
+            <secrion class="pay_select-wrap">
+                <div class="FilterChangeCategory_filter-work-condition">
+                    <div class="Selectbox_selectbox">
+                        <div class="Selectbox_selectbox-container Selectbox_selectbox-container--selected Selectbox_large">
+                            <select title="근무기간선택" name="from" id="from">
+                                <option selected="" value="HOURLY">시급</option>
+                                <option value="DAILY">일급</option>
+                                <option value="WEEKLY">주급</option>
+                                <option value="MONTHLY">월급</option>
+                                <option value="YEAR">연봉</option>
+                            </select>
+                            <span class="Selectbox_selectbox__icon">
+                                <i style="font-size:24px" class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="FilterChangeCategory_filter-arrow">
+                        <i style="font-size:20px" class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <div class="Selectbox_selectbox">
+                        <div class="Selectbox_selectbox-container Selectbox_selectbox-container--selected Selectbox_large">
+                            <select title="근무요일선택" name="to" id="to">
+                                <option value="DAILY">일급</option>
+                                <option value="WEEKLY">주급</option>
+                                <option selected="" value="MONTHLY">월급</option>
+                                <option value="YEAR">연봉</option>
+                            </select>
+                            <span class="Selectbox_selectbox__icon">
+                                <i style="font-size:24px" class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </secrion>
+            <section class="pay_input-wrap">
+                <div>
+                    <div class="InputPrice2_container">
+                        <label>
+                            <span class="" style="color:#171717">시급</span>
+                        </label>
+                        <label class="Textfield_container" data-filled="true">
+                            <div class="Textfield_wrap-input">
+                                <input type="text" placeholder="예) 1,000,000" value="">
+                                <div class="Textfield_wrap-icon">
+                                    <span>원</span>
+                                </div>
+                                <input type="hidden" class="Textfield_hidden-input">
+                            </div>
+                        </label>
+                        <div class="InputPrice2_container__korea-text"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="InputSelect_input_select">
+                        <label class="InputSelect_input_select__label">
+                            <span class="">일일 근무시간</span>
+                        </label>
+                        <div class="InputSelect_input_select-container InputSelect_input_select-container--selected">
+                            <select>
+                                <option value="0">시간선택</option>
+                                <option value="30">30분</option>
+                                <option value="60">1시간</option>
+                                <option value="90">1시간 30분</option>
+                                <option value="120">2시간</option>
+                                <option value="150">2시간 30분</option>
+                                <option value="180">3시간</option>
+                                <option value="210">3시간 30분</option>
+                                <option value="240">4시간</option>
+                                <option value="270">4시간 30분</option>
+                                <option value="300">5시간</option>
+                                <option value="330">5시간 30분</option>
+                                <option value="360">6시간</option>
+                                <option value="390">6시간 30분</option>
+                                <option value="420">7시간</option>
+                                <option value="450">7시간 30분</option>
+                                <option value="480">8시간</option>
+                                <option value="510">8시간 30분</option>
+                                <option value="540">9시간</option>
+                                <option value="570">9시간 30분</option>
+                                <option value="600">10시간</option>
+                                <option value="630">10시간 30분</option>
+                                <option value="660">11시간</option>
+                                <option value="690">11시간 30분</option>
+                                <option value="720">12시간</option>
+                                <option value="750">12시간 30분</option>
+                                <option value="780">13시간</option>
+                                <option value="810">13시간 30분</option>
+                                <option value="840">14시간</option>
+                                <option value="870">14시간 30분</option>
+                                <option value="900">15시간</option>
+                                <option value="930">15시간 30분</option>
+                                <option value="960">16시간</option>
+                                <option value="990">16시간 30분</option>
+                                <option value="1020">17시간</option>
+                                <option value="1050">17시간 30분</option>
+                                <option value="1080">18시간</option>
+                                <option value="1110">18시간 30분</option>
+                                <option value="1140">19시간</option>
+                                <option value="1170">19시간 30분</option>
+                                <option value="1200">20시간</option>
+                                <option value="1230">20시간 30분</option>
+                                <option value="1260">21시간</option>
+                                <option value="1290">21시간 30분</option>
+                                <option value="1320">22시간</option>
+                                <option value="1350">22시간 30분</option>
+                                <option value="1380">23시간</option>
+                                <option value="1410">23시간 30분</option>
+                                <option value="1440">24시간</option>
+                            </select>
+                            <span class="InputSelect_input_select__icon">
+                                <i style="font-size:24px" class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="InputSelect_input_select">
+                        <label class="InputSelect_input_select__label">
+                            <span class="">일주 근무일수</span>
+                        </label>
+                        <div class="InputSelect_input_select-container InputSelect_input_select-container--selected InputSelect_large">
+                            <select>
+                                <option value="0">선택</option>
+                                <option value="1">1일</option>
+                                <option value="2">2일</option>
+                                <option value="3">3일</option>
+                                <option value="4">4일</option>
+                                <option value="5">5일</option>
+                                <option value="6">6일</option>
+                                <option value="7">매일</option>
+                            </select>
+                            <span class="InputSelect_input_select__icon">
+                                <i style="font-size:24px" class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="InputSelect_input_select">
+                        <label class="InputSelect_input_select__label">
+                            <span class="">
+                                월 연장 근무시간
+                                <button type="button" class="InputSelect_input_select_label_icon">
+                                    <i class="Icon_icon__BlZpj icon-system_tooltip1"></i>
+                                </button>
+                            </span>
+                        </label>
+                        <div class="InputSelect_input_select-container InputSelect_input_select-container--selected InputSelect_large">
+                            <select>
+                                <option value="0">시간선택</option>
+                                <option value="30">30분</option>
+                                <option value="60">1시간</option>
+                                <option value="90">1시간 30분</option>
+                                <option value="120">2시간</option>
+                                <option value="150">2시간 30분</option>
+                                <option value="180">3시간</option>
+                                <option value="210">3시간 30분</option>
+                                <option value="240">4시간</option>
+                                <option value="270">4시간 30분</option>
+                                <option value="300">5시간</option>
+                                <option value="330">5시간 30분</option>
+                                <option value="360">6시간</option>
+                                <option value="390">6시간 30분</option>
+                                <option value="420">7시간</option>
+                                <option value="450">7시간 30분</option>
+                                <option value="480">8시간</option>
+                                <option value="510">8시간 30분</option>
+                                <option value="540">9시간</option>
+                                <option value="570">9시간 30분</option>
+                                <option value="600">10시간</option>
+                                <option value="630">10시간 30분</option>
+                                <option value="660">11시간</option>
+                                <option value="690">11시간 30분</option>
+                                <option value="720">12시간</option>
+                                <option value="750">12시간 30분</option>
+                                <option value="780">13시간</option>
+                                <option value="810">13시간 30분</option>
+                                <option value="840">14시간</option>
+                                <option value="870">14시간 30분</option>
+                                <option value="900">15시간</option>
+                                <option value="930">15시간 30분</option>
+                                <option value="960">16시간</option>
+                                <option value="990">16시간 30분</option>
+                                <option value="1020">17시간</option>
+                                <option value="1050">17시간 30분</option>
+                                <option value="1080">18시간</option>
+                                <option value="1110">18시간 30분</option>
+                                <option value="1140">19시간</option>
+                                <option value="1170">19시간 30분</option>
+                                <option value="1200">20시간</option>
+                                <option value="1230">20시간 30분</option>
+                                <option value="1260">21시간</option>
+                                <option value="1290">21시간 30분</option>
+                                <option value="1320">22시간</option>
+                                <option value="1350">22시간 30분</option>
+                                <option value="1380">23시간</option>
+                                <option value="1410">23시간 30분</option>
+                                <option value="1440">24시간</option>
+                                <option value="1470">24시간 30분</option>
+                                <option value="1500">25시간</option>
+                                <option value="1530">25시간 30분</option>
+                                <option value="1560">26시간</option>
+                                <option value="1590">26시간 30분</option>
+                                <option value="1620">27시간</option>
+                                <option value="1650">27시간 30분</option>
+                                <option value="1680">28시간</option>
+                                <option value="1710">28시간 30분</option>
+                                <option value="1740">29시간</option>
+                                <option value="1770">29시간 30분</option>
+                                <option value="1800">30시간</option>
+                                <option value="1830">30시간 30분</option>
+                                <option value="1860">31시간</option>
+                                <option value="1890">31시간 30분</option>
+                                <option value="1920">32시간</option>
+                                <option value="1950">32시간 30분</option>
+                                <option value="1980">33시간</option>
+                                <option value="2010">33시간 30분</option>
+                                <option value="2040">34시간</option>
+                                <option value="2070">34시간 30분</option>
+                                <option value="2100">35시간</option>
+                                <option value="2130">35시간 30분</option>
+                                <option value="2160">36시간</option>
+                                <option value="2190">36시간 30분</option>
+                                <option value="2220">37시간</option>
+                                <option value="2250">37시간 30분</option>
+                                <option value="2280">38시간</option>
+                                <option value="2310">38시간 30분</option>
+                                <option value="2340">39시간</option>
+                                <option value="2370">39시간 30분</option>
+                                <option value="2400">40시간</option>
+                                <option value="2430">40시간 30분</option>
+                                <option value="2460">41시간</option>
+                                <option value="2490">41시간 30분</option>
+                                <option value="2520">42시간</option>
+                                <option value="2550">42시간 30분</option>
+                                <option value="2580">43시간</option>
+                                <option value="2610">43시간 30분</option>
+                                <option value="2640">44시간</option>
+                                <option value="2670">44시간 30분</option>
+                                <option value="2700">45시간</option>
+                                <option value="2730">45시간 30분</option>
+                                <option value="2760">46시간</option>
+                                <option value="2790">46시간 30분</option>
+                                <option value="2820">47시간</option>
+                                <option value="2850">47시간 30분</option>
+                                <option value="2880">48시간</option>
+                                <option value="2910">48시간 30분</option>
+                                <option value="2940">49시간</option>
+                                <option value="2970">49시간 30분</option>
+                                <option value="3000">50시간</option>
+                                <option value="3030">50시간 30분</option>
+                                <option value="3060">51시간</option>
+                                <option value="3090">51시간 30분</option>
+                                <option value="3120">52시간</option>
+                                <option value="3150">52시간 30분</option>
+                                <option value="3180">53시간</option>
+                                <option value="3210">53시간 30분</option>
+                                <option value="3240">54시간</option>
+                                <option value="3270">54시간 30분</option>
+                                <option value="3300">55시간</option>
+                                <option value="3330">55시간 30분</option>
+                                <option value="3360">56시간</option>
+                                <option value="3390">56시간 30분</option>
+                                <option value="3420">57시간</option>
+                                <option value="3450">57시간 30분</option>
+                                <option value="3480">58시간</option>
+                                <option value="3510">58시간 30분</option>
+                                <option value="3540">59시간</option>
+                                <option value="3570">59시간 30분</option>
+                                <option value="3600">60시간</option>
+                            </select>
+                            <span class="InputSelect_input_select__icon">
+                                <i style="font-size:24px" class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
+                <div>
+                    <div class="InputSelect_input_select">
+                        <label class="InputSelect_input_select__label">
+                            <span class="">
+                                세금 적용
+                                <button type="button" class="InputSelect_input_select_label_icon">
+                                    <i class="Icon_icon__BlZpj icon-system_tooltip1"></i>
+                                </button>
+                            </span>
+                        </label>
+                        <div class="InputSelect_input_select-container InputSelect_input_select-container--selected InputSelect_large">
+                            <select>
+                                <option selected="" value="0">적용안함</option>
+                                <option value="1">4대보험 (9.32%)</option>
+                                <option value="2">소득세 (3.3%)</option>
+                            </select>
+                            <span class="InputSelect_input_select__icon">
+                                <i style="font-size:24px" class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pay_button-wrap">
+                <button type="button" class="Button_button__S9rjD Button_contained__DJSrI Button_large Button_secondary">
+                    <span class="button-inner">초기화</span>
+                </button>
+                <button type="button" class="Button_button__S9rjD Button_contained__DJSrI Button_large Button_primary">
+                    <span class="button-inner">계산</span>
+                </button>
+            </section>
+            <section class="pay_calculate-wrap__Fdzdd">
+                <article class="pay_calculate-wrap__item__I5FK5">
+                    <span>예상 급여</span>
+                    <span></span>
+                </article>
+                <article class="pay_calculate-wrap__item__I5FK5 pay_calculate-wrap__margin__SxAhX">
+                    <span>예상 연장수당</span>
+                    <span></span>
+                </article>
+            </section> 
         </div>
+       
     </main>
 
     <footer>made by 100</footer>
